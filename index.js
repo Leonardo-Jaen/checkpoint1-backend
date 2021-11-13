@@ -6,11 +6,11 @@ let prato_brigadeiro = "brigadeiro";
 
 function pipoca(tempo) {
     let tempo_pipoca = 10;
-    if (tempo == tempo_pipoca) {
+    if (tempo == tempo_pipoca && tempo < tempo_pipoca *2) {
         console.log(`Prato pronto, Bom apetite!`)
     } else if (tempo < tempo_pipoca) {
         console.log(`Tempo insuficiente`)
-    } else if (tempo <= tempo_pipoca * 2) {
+    } else if (tempo >= tempo_pipoca * 2 && tempo < tempo_pipoca*3) {
         console.log(`seu prato queimou`)
     } else if (tempo >= tempo_pipoca * 3) {
         console.log(`Kaboom`)
@@ -19,11 +19,11 @@ function pipoca(tempo) {
 
 function macarrao(tempo) {
     let tempo_macarrao = 15;
-    if (tempo == tempo_macarrao) {
+    if (tempo == tempo_macarrao && tempo < tempo_macarrao *2) {
         console.log(`Prato pronto, Bom apetite!`)
     } else if (tempo < tempo_macarrao) {
         console.log(`Tempo insuficiente`)
-    } else if (tempo <= tempo_macarrao * 2) {
+    } else if (tempo >= tempo_macarrao * 2 && tempo < tempo_macarrao *3) {
         console.log(`seu prato queimou`)
     } else if (tempo >= tempo_macarrao * 3) {
         console.log(`Kaboom`)
@@ -32,11 +32,11 @@ function macarrao(tempo) {
 
 function carne(tempo) {
     let tempo_carne = 8;
-    if (tempo == tempo_carne) {
+    if (tempo == tempo_carne && tempo < tempo_carne *2) {
         console.log(`Prato pronto, Bom apetite!`)
     } else if (tempo < tempo_carne) {
         console.log(`Tempo insuficiente`)
-    } else if (tempo <= tempo_carne * 2) {
+    } else if (tempo >= tempo_carne * 2 && tempo < tempo_carne *3) {
         console.log(`seu prato queimou`)
     } else if (tempo >= tempo_carne * 3) {
         console.log(`Kaboom`)
@@ -45,11 +45,11 @@ function carne(tempo) {
 
 function feijao(tempo) {
     let tempo_feijao = 12;
-    if (tempo == tempo_feijao) {
+    if (tempo == tempo_feijao && tempo < tempo_feijao *2) {
         console.log(`Prato pronto, Bom apetite!`)
     } else if (tempo < tempo_feijao) {
         console.log(`Tempo insuficiente`)
-    } else if (tempo <= tempo_feijao * 2) {
+    } else if (tempo >= tempo_feijao * 2 && tempo < tempo_brigadeiro *3) {
         console.log(`seu prato queimou`)
     } else if (tempo >= tempo_feijao * 3) {
         console.log(`Kaboom`)
@@ -58,11 +58,11 @@ function feijao(tempo) {
 
 function brigadeiro(tempo) {
     let tempo_brigadeiro = 8;
-    if (tempo == tempo_brigadeiro) {
+    if (tempo >= tempo_brigadeiro && tempo < tempo_brigadeiro *2) {
         console.log(`Prato pronto, Bom apetite!`)
     } else if (tempo < tempo_brigadeiro) {
         console.log(`Tempo insuficiente`)
-    } else if (tempo <= tempo_brigadeiro * 2) {
+    } else if (tempo >= tempo_brigadeiro * 2 && tempo < tempo_brigadeiro *3) {
         console.log(`seu prato queimou`)
     } else if (tempo >= tempo_brigadeiro * 3) {
         console.log(`Kaboom`)
@@ -85,4 +85,4 @@ function microondas(tempo, comida) {
     }
 }
 
-microondas(28, prato_brigadeiro);
+microondas(10, prato_brigadeiro);
